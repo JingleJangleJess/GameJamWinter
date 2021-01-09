@@ -5,23 +5,26 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
+    public GameObject WinObj;
+    public GameObject LoseObj;
+    private Image WinImg;
+    private Image LoseImg;
+    
     void Start()
     {
-        
+        WinImg = WinObj.GetComponent<Image>();
+        LoseImg = LoseObj.GetComponent<Image>();
     }
-
-    // Update is called once per frame
     void Update()
     {
         
     }
-
     void GameWin() 
     {
-        
+        Debug.Log("Won!");
     }
     void GameLose() 
     {
-    
+        Debug.Log("Lost :c");
     }
 }

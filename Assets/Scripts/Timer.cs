@@ -5,8 +5,9 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public GameObject target;//target gameobject to send message to
-    public float timer;
-    private float currentTime;
+    public float timer;//the amount of time we want the game to last
+    private float currentTime;//the time to be calculated with in script
+    private Slider timeSlide;//the slider to input the currenttime value into
     // Start is called before the first frame update
     void Start()
     {
